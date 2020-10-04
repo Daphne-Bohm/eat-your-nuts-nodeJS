@@ -1,0 +1,47 @@
+
+        {{> header}}
+
+        <main>
+
+            <div class="item-container">
+                
+                <h2>{{name}}</h2>
+
+                <div class="item-img">
+                     <img src="img/{{img}}.jpg" alt="{{name}}">
+                </div>
+
+                <div class="item-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta excepturi nobis accusamus laborum ipsa incidunt est fugit cumque dicta sapiente quos, aspernatur dolorem nihil quis placeat sint eligendi similique libero?</p>
+                    <div class="gram-price-item">
+                        <p>500 gram</p>
+                        <p>€{{price}}</p>
+                    </div>
+
+                    <form action="/shop/shoppingcart" method="POST" class="input-button-item">
+
+                        <input type="number" class="quantityInput" name="quantity" min="1" max="100" placeholder="0">
+
+                        <input type="hidden" name="price" min="1" max="100" placeholder="1" value="{{price}}">
+
+                        <input type="hidden" name="img" min="1" max="100" placeholder="1" value="{{img}}">
+
+                        <input type="hidden" name="name" min="1" max="100" placeholder="1" value="{{name}}">
+
+                        <input type="hidden" name="id" min="1" max="100" placeholder="1" value="{{id}}">
+
+                        <button type="submit" class="addToCartBtn">Add to cart</button>
+
+                    </form>
+
+                </div>
+                    
+            </div>
+
+        </main>
+
+        {{> footer}}
+
+    </body>
+
+</html>

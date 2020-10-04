@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    width: 100%;
+}
+
+body{
+    font-family: 'Baloo Tamma 2', cursive;
+    width: 100%;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration-style: none;
+}
+
+button{
+    font-family: 'Baloo Tamma 2', cursive;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+input{
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+//ERROR MESSAGES
+
+.error-messages{
+    width: 0%;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: $error-color;
+    opacity: 0;
+    animation: animateError 1.5s ease forwards;
+}
+
+@keyframes animateError{
+    from { width: 0%; opacity: 0; }
+    to { width: 100%; opacity: 1; }
+}
+
+//SUCCES MESSAGES
+
+.succes-messages{
+    width: 0%;
+    text-align: center;
+    background-color: $succes-color;
+    opacity: 0;
+    animation: animateSucces 1.5s ease forwards;
+}
+
+@keyframes animateSucces{
+    from { width: 0%; opacity: 0; }
+    to { width: 100%; opacity: 1; }
+}
+

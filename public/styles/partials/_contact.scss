@@ -1,0 +1,35 @@
+.container-contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width: 80%;
+    .text-contact{
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: $red-color;
+            margin-bottom: 20px;
+        }
+    }
+    .input-contact{
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        margin-top: 20px;
+        input{
+            margin: 10px 0;
+            padding: 6px;
+        }
+        .text-field{
+            padding-bottom: 6rem;
+        }
+        button{
+            background-color: $red-color;
+            color: $light-text-color;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    }
+}

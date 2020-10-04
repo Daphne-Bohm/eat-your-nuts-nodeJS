@@ -1,0 +1,94 @@
+
+        {{> header}}
+
+        {{#if messages.error}}
+            <div class="error-messages">
+                <h3> {{messages.error}}</h3>
+            </div>
+        {{/if}}
+
+        {{#if messages.succes}}
+            <div class="succes-messages">
+                <h3> {{messages.succes}}</h3>
+            </div>
+        {{/if}}
+
+        <main class="homepage">
+
+            <div class="homepage-banner">
+                <div class="homepage-banner-img">
+                    <img src="/img/eat-your-nuts-fallon-michael.jpg" alt="eat your nuts banner">
+                </div>
+                <div class="homepage-banner-text">
+                    <h2 class="banner-subtitle" id="banner-subtitle">be smart</h2>
+                    <h1 class="banner-title" id="banner-title">eat your nuts</h1>
+                </div>
+            </div>
+
+            <div class="container-carousel">
+                
+                <h1>new in store</h1>
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                     <a href="/pistachios">
+                        <img src="/img/pistachio-joanna-kosinska.jpg" class="d-block w-100" alt="pistachios">
+                    </a>
+                    </div>
+                    <div class="carousel-item">
+                    <a href="/healthy%20mix">
+                        <img src="/img/healthy-mix-maksim-shutov.jpg" class="d-block w-100" alt="healthy mix">
+                    </a>
+                    </div>
+                    <div class="carousel-item">
+                    <a href="/dried%20apricots">
+                        <img src="/img/dried-apricot-elena-mozhvilo.jpg" class="d-block w-100" alt="dried apricots">
+                    </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </div>
+
+            <div class="container-cards">
+                <h1>shop</h1>
+                <div class="cards">
+                    {{#each items}}
+                        <div class="card">
+                            <div class="container-img">
+                                <a href="/{{name}}"><img src="img/{{img}}.jpg" class="card-img-top" alt="{{name}}"></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">{{name}}</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facere?</p>
+                                <a href="/{{name}}">Read more...</a>
+                                <p class="item-price">€{{price}}</p>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+
+        </main>
+
+        {{> footer}}
+
+    <script src="/js/script.js"></script>
+    <script>
+        const alerted = localStorage.getItem('alerted') || '';
+        if(alerted !== 'yes'){
+            alert('This is only a little preview. It is not connected with a database. You cannot create an account or log in. Adding items to the shoppingcart and removing items from the shoppingcart are also not available. For more information, go to my Github page: https://github.com/Daphne-Bohm/eatyournuts.')
+            localStorage.setItem('alerted', 'yes');
+        }
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,26 @@
+.navbar{
+    background-color: $black-color !important;
+    padding: 2rem;
+    .navbar-toggler{
+        outline: none;
+    }
+    .navbar-brand{
+        color: $light-text-color !important;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .nav-link{
+        color: $light-text-color !important;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media only screen and (max-width: 580px) { 
+    .navbar-brand{
+        font-size: 1.5rem !important;
+    }
+}

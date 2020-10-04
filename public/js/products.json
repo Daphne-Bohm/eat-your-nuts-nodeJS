@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "name": "healthy mix",
+        "price": 5.95,
+        "img": "healthy-mix-maksim-shutov"
+    },
+    {
+        "id": 2,
+        "name": "dried apricots",
+        "price": 4.55,
+        "img": "dried-apricot-elena-mozhvilo"
+
+    },
+    {
+        "id": 3,
+        "name": "pistachios",
+        "price": 8.95,
+        "img": "pistachio-joanna-kosinska"
+
+    },
+    {
+        "id": 4,
+        "name": "almonds",
+        "price": 5.95,
+        "img": "almonds-chuttersnap"
+
+    },
+    {
+        "id": 5,
+        "name": "superfood mix",
+        "price": 6.55,
+        "img": "superfoodmix-paulo-prado"
+
+    },
+    {
+        "id": 6,
+        "name": "mixed nuts",
+        "price": 3.95,
+        "img": "mixed-nuts-peter-feghali"
+
+    },
+    {
+        "id": 7,
+        "name": "pistachio with shell",
+        "price": 5.45,
+        "img": "pistachio-with-shell-pexels-pixabay"
+
+    },
+    {
+        "id": 8,
+        "name": "walnuts with shell",
+        "price": 4.15,
+        "img": "walnuts-with-shell-tom-hermans"
+
+    },
+    {
+        "id": 9,
+        "name": "peanuts",
+        "price": 2.45,
+        "img": "pindas-tom-hermans"
+
+    },
+    {
+        "id": 10,
+        "name": "walnuts",
+        "price": 7.95,
+        "img": "walnuts-tom-hermans"
+    } 
+]

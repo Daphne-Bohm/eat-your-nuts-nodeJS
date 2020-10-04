@@ -1,0 +1,51 @@
+.container-form-profile{
+    width: 50vw;
+    margin: 150px auto;
+    h1{
+        color: $red-color;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .address-housenumber{
+        display: flex;
+        justify-content: space-between;
+        #address{
+            width: 34vw;
+            margin-right: 1vw;
+        }
+        #housenumber{
+            width: 15vw;
+        }
+    }
+    .btn-profile{
+        background-color: $red-color;
+        color: $light-text-color;
+        margin: 1.2rem auto;
+        width: 50vw;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 790px) { 
+    .container-form-profile{
+        width: 80vw;
+        margin: 50px auto;
+        h1{
+            font-size: 1.3rem;
+        }
+        .address-housenumber{
+            display: flex;
+            flex-direction: column;
+            #address{
+                width: 80vw;
+                margin-right: 0;
+            }
+            #housenumber{
+                width: 80vw;
+            }
+        }
+        .btn-profile{
+            width: 80vw;
+        }
+    }
+}

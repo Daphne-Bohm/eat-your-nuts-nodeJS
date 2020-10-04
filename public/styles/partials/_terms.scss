@@ -1,0 +1,17 @@
+.terms-and-conditions{
+    width: 80%;
+    margin: 100px auto;
+    h1{
+        color: $red-color;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    h2{
+        color: $red-color;
+        text-transform: uppercase;
+    }
+    p{
+        margin: 30px 0;
+    }
+}

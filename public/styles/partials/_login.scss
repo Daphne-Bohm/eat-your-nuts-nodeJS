@@ -1,0 +1,29 @@
+.container-form-login{
+    width: 30vw;
+    margin: 150px auto;
+    h1{
+        color: $red-color;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .btn-login{
+        background-color: $red-color;
+        color: $light-text-color;
+        margin: 1.2rem auto;
+        width: 30vw;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 790px) { 
+    .container-form-login{
+        width: 80vw;
+        margin: 50px auto;
+        h1{
+            font-size: 1.3rem;
+        }
+        .btn-login{
+            width: 80vw;
+        }
+    }
+}

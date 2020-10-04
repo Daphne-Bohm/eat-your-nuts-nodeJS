@@ -1,0 +1,51 @@
+
+        {{> header}}
+
+        {{#if messages.error}}
+            <div class="error-messages">
+                <h3> {{messages.error}}</h3>
+            </div>
+        {{/if}}
+
+        {{#if messages.succes}}
+            <div class="succes-messages">
+                <h3> {{messages.succes}}</h3>
+            </div>
+        {{/if}}
+
+        <main>
+
+            <div class="container-form-register">
+
+                <h1>I am new</h1>
+
+                 <form action="/users/register" method="POST">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                    </div>
+
+                    <div class="form-control-register">
+                        <label for="passwordRepeat">Confirm password</label>
+                        <input type="password" id="passwordRepeat" class="form-control" name="passwordRepeat">
+                    </div>
+
+                    <button type="submit" class="btn-register" id="btnProfile">Register</button>
+
+                </form>
+
+            </div>
+
+        </main>
+
+       {{> footer}}
+    

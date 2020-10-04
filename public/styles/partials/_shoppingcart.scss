@@ -1,0 +1,86 @@
+.shoppingcart-header{
+    text-align: center;
+    margin: 80px 0;
+    line-height: 0.8;
+    h2{
+        color: $red-color;
+        text-transform: uppercase;
+    }
+    a{
+        color: $black-color;
+        text-decoration-line: underline;
+    }
+}
+
+#shoppingcart-container{
+    margin-bottom: 150px;
+    tr{
+        margin: 10px 0;
+    }
+    th{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    h4{
+        text-transform: uppercase;
+        color: $red-color;
+        margin-top: 10px;
+    }
+    .removeBtn{
+        background-color: $white-color;
+        text-decoration-line: underline;
+    }
+    input{
+        text-align: center;
+    }
+}
+
+.subtotal-container{
+    margin: 50px auto 100px auto;
+    width: 20vw;
+    .subtotal{
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    .check-out-button{
+        width: 100%;
+        color: $light-text-color;
+        background-color: $red-color;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width: 500px) { 
+    #shoppingcart-container{
+        overflow: hidden;
+        th{
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        td{
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            margin: 10px 0;
+            img{
+                display: none;
+            }
+            h4{
+                font-size: 1rem;
+            }
+            br{
+                display: none;
+            }
+            .removeBtn{
+               font-size: 1rem;
+            }
+        }
+        
+    }
+    .subtotal-container{
+        width: 50vw;
+    }
+}

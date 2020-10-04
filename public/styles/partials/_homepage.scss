@@ -1,0 +1,142 @@
+.homepage-banner{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: $light-text-color;
+    margin: 80px auto 0 auto;
+    .homepage-banner-img{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .homepage-banner-text{
+        width: 40%;
+        text-align: center;
+        text-transform: uppercase;
+        margin: auto;
+    }
+}
+
+.container-carousel{
+    h1{
+        text-align: center;
+        color: $red-color;
+        margin: 50px 0;
+        text-transform: uppercase;
+    }
+    .carousel{
+        width: 30vw;
+        margin: 0 auto;
+       .carousel-control-prev{
+            height: 50px;
+            opacity: 1;
+            width: 50px;
+            margin-top: 30%;
+            transition: all 0.5s ease;
+            &:hover{
+                background-color: $black-color;
+            }
+       }
+       .carousel-control-next{
+            height: 50px;
+            opacity: 1;
+            width: 50px;
+            margin-top: 30%;
+            &:hover{
+                background-color: $black-color;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}
+
+.container-cards{
+    margin: 50px 0 150px 0;
+    h1{
+        text-align: center;
+        color: $red-color;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+    .cards{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        margin: 0 auto;
+        .card{
+            width: 20rem;
+            margin-bottom: 50px;
+            background-color: $light-text-color;
+            border: none;
+            position: relative;
+            .container-img{
+                overflow: hidden;
+                img{
+                    transition: all 0.5s ease;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            .card-title{
+                color: $red-color;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            .card-body{
+                a{
+                    text-decoration-line: none;
+                    color: $black-color;
+                    &:hover{
+                        color: $red-color;
+                    }
+                }
+                .item-price{
+                    position: absolute;
+                    bottom: 3px;
+                    right: 35px;
+                    color: $red-color;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 790px) { 
+
+    .homepage-banner{
+        padding: 20px 0;
+    }
+
+    .banner-subtitle{
+        font-size: 1.2rem;
+    }
+
+    .banner-title{
+        font-size: 1.3rem;
+    }
+
+    .container-carousel{
+        h1{
+            font-size: 1.3rem;
+        }
+        .carousel{
+            width: 50vw;
+        }
+    }
+
+    .container-cards{
+        
+        h1{
+            font-size: 1.3rem; 
+        }
+        .card{
+            margin: 0 auto;
+        }
+    }
+
+}

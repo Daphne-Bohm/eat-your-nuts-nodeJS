@@ -1,0 +1,64 @@
+
+       {{> header}}
+
+        {{#if messages.error}}
+            <div class="error-messages">
+                <h3> {{messages.error}}</h3>
+            </div>
+        {{/if}}
+
+        {{#if messages.succes}}
+            <div class="succes-messages">
+                <h3> {{messages.succes}}</h3>
+            </div>
+        {{/if}}
+        
+        <main>
+
+            <div class="container-form-profile">
+
+                <h1>my account</h1>
+
+                <form action="/profile/profile" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="{{ name }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="{{ email }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                    </div>
+
+                    <div class="address-housenumber">
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="{{ address }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="housenumber">House number</label>
+                            <input type="text" class="form-control" id="housenumber" name="housenumber" placeholder="{{ housenumber }}">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="zipcode">Zip code</label>
+                        <input type="text" class="form-control" id="zipcode" name="zipcode" placeholder="{{ zipcode }}">
+                    </div>
+                    <button type="submit" class="btn-profile" id="btnProfile">Update</button>
+                </form>
+
+                <p class="new-member-register">Do you want to change your password? <a href="/profile/password-reset">Go here</a>.</p>
+
+            </div>
+
+        </main> 
+
+        {{> footer}}
+
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+footer{
+    background-color: $black-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1.5rem;
+    width: 100%;
+    position: relative;
+    p{
+        color: $light-text-color;
+        &:hover{
+            color: $white-color;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $light-text-color;
+        &:hover{
+            color: $white-color;
+        }
+    }
+    .social-links{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            margin-left: 1rem;
+        } &:hover{
+            color: $white-color;
+        }
+    }
+    .copyright{
+        position: absolute;
+        bottom: 1rem;
+        font-size: 12px;
+    }
+}
