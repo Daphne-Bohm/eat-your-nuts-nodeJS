@@ -2,12 +2,12 @@ const express = require('express');
 const items = require('../api/items.json');
 const fs = require('fs');
 
-//const passport = require('passport');
-//const session = require('express-session');
-//const flash = require('express-flash');
+const passport = require('passport');
+const session = require('express-session');
+const flash = require('express-flash');
 
-//const db = require('../database');
-//const bcrypt = require('bcryptjs');
+const db = require('../database');
+const bcrypt = require('bcryptjs');
 const path = require('path');
 
 const router = express.Router();
@@ -19,7 +19,7 @@ router.get('/shoppingcart', (req, res) => {
 
 });
  
-/*router.post('/shoppingcart', (req, res) => {
+router.post('/shoppingcart', (req, res) => {
 
   console.log(req.body)
 
@@ -36,7 +36,7 @@ router.get('/shoppingcart', (req, res) => {
 
   }
 
-})*/
+})
 
 // EXPORT
 module.exports = router;

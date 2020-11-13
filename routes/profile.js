@@ -1,20 +1,20 @@
-//const dotenv = require('dotenv');
-//dotenv.config( { path: './.env'} );
+const dotenv = require('dotenv');
+dotenv.config( { path: './.env'} );
 
 const express = require('express');
 const flash = require('express-flash');
-//const session = require('express-session');
-//const checkAuth = require('../middelware/check-auth');
+const session = require('express-session');
+const checkAuth = require('../middelware/check-auth');
 
-//const db = require('../database');
-//const bcrypt = require('bcryptjs');
-//const passport = require('passport');
+const db = require('../database');
+const bcrypt = require('bcryptjs');
+const passport = require('passport');
 
 const router = express.Router();
 
 /****************************************************ROUTE*****************************************************/
 
-/*router.get('/profile', checkAuth(), (req, res ) => {// WHEN USER GOES TO PROFILE WEBPAGE -> 1. Show users info and 2. show the actual webpage
+router.get('/profile', checkAuth(), (req, res ) => {// WHEN USER GOES TO PROFILE WEBPAGE -> 1. Show users info and 2. show the actual webpage
 
     // SHOW USERS INFORMATION
     const userID = req.session.passport.user;
@@ -52,7 +52,7 @@ router.get('/password-reset', checkAuth(), (req, res ) => {// WHEN USER GOES TO 
 /**************************************************WHEN FORM IS SUBMITTED***************************************************/
 
 //PROFILE
-/*router.post('/profile', (req, res) =>{
+router.post('/profile', (req, res) =>{
 
     const { name, email, password, address, housenumber,  zipcode } = req.body;
     let errors = [];
@@ -190,4 +190,4 @@ router.post('/password-reset', (req, res) =>{
 })
 
 
-module.exports = router;*/
+module.exports = router;

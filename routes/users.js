@@ -1,15 +1,15 @@
-//const dotenv = require('dotenv');
-//dotenv.config( { path: './.env'} );
+const dotenv = require('dotenv');
+dotenv.config( { path: './.env'} );
 
 const express = require('express');
 
-//const passport = require('passport');
-//const session = require('express-session');
-//const flash = require('express-flash');
+const passport = require('passport');
+const session = require('express-session');
+const flash = require('express-flash');
 
-//const db = require('../database');
-//const bcrypt = require('bcryptjs');
-//const path = require('path');
+const db = require('../database');
+const bcrypt = require('bcryptjs');
+const path = require('path');
 
 const router = express.Router();
 
@@ -27,19 +27,19 @@ router.get('/register', (req, res) => {
  })//localhost:3003/users/register
 
 //LOGOUT PAGE
-//router.get('/logout', (req, res) => {
-   // req.logout();
+router.get('/logout', (req, res) => {
+    req.logout();
     //ending the session
-   // req.session.destroy();
-   // res.redirect('/');
-    //req.flash('succes', 'User is logged out.');
- //})//localhost:3003/users/logout
+    req.session.destroy();
+    res.redirect('/');
+    req.flash('succes', 'User is logged out.');
+})//localhost:3003/users/logout
 
 module.exports = router;
 
 //********************************HANDLES WHEN FORM IS SUBMITTED**********************************/
 // REGISTER HANDLE
-/*router.post('/register', (req, res) =>{
+router.post('/register', (req, res) =>{
     const { name, email, password, passwordRepeat } = req.body;
     const regexPass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
     const regexEmail = /\S+@\S+\.\S+/;
@@ -177,4 +177,4 @@ passport.serializeUser((userId, done)=>{
 //retrieve from the session
 passport.deserializeUser((userId, done)=>{
     done(null, userId);
-})*/
+})

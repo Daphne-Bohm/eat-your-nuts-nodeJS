@@ -2,21 +2,21 @@ const express = require('express');
 const items = require('../api/items.json');
 const fs = require('fs');
 
-/*const passport = require('passport');
+const passport = require('passport');
 const session = require('express-session');
 const flash = require('express-flash');
 
 const db = require('../database');
 const bcrypt = require('bcryptjs');
-const path = require('path');*/
+const path = require('path');
 
 const router = express.Router();
 
 // HOMEPAGE
 router.get('/', (req, res) => {
    
-   //console.log(req.user);//comes with passport
-   //console.log(req.isAuthenticated());//comes with passport
+   console.log(req.user);//comes with passport
+   console.log(req.isAuthenticated());//comes with passport
 
    res.render('index', {
       items: items

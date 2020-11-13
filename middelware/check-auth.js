@@ -1,4 +1,4 @@
-/*module.exports = (req, res, next) =>{
+module.exports = (req, res, next) =>{
 
   return (req, res, next) => {
 		//console.log(`req.session.passport.user: ${JSON.stringify(req.session.passport)}`);
@@ -7,4 +7,4 @@
       res.redirect('/users/login')
       //checks if user is logged in
 	}
-}*/
+}

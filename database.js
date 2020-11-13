@@ -1,4 +1,4 @@
-/*const dotenv = require('dotenv');
+const dotenv = require('dotenv');
 dotenv.config({path:'./.env'});
 
 const mysql = require('mysql');
@@ -17,4 +17,4 @@ db.connect((error) =>{
     }
 });
 
-module.exports = db;*/
+module.exports = db;
